@@ -17,7 +17,7 @@ header {
 }
 
 header h1 {
-  font-size: 66px;
+  font-size: 56px;
   font-weight: 700;
   line-height: 1.5;
   margin: 30px 0 0 0;
@@ -53,13 +53,64 @@ header a {
   display: inline-block;
 }
 
+footer {
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("./images/folhas.jpg");
+  color: black;
+  padding: 100px;
+}
+
+footer h3 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+footer p {
+  color: #a14867;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #c06f8c;
+  opacity: 0.7;
+}
+
+section {
+  max-width: 1200px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1400px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 /* MEDIA QUERY */
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
