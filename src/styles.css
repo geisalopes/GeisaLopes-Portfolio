@@ -4,11 +4,11 @@ body {
 }
 
 header {
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #a14867;
   padding: 150px 0;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.9)
@@ -54,30 +54,30 @@ header a {
 }
 
 footer {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* background-size: cover; */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.9)
     ),
-    url("./images/folhas.jpg");
+    url("./images/folhas.jpg"); */
+  background-color: #f8f9fa;
   color: black;
-  padding: 100px;
+  padding: 30px;
 }
 
 footer h3 {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
 footer p {
   color: #a14867;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   opacity: 0.7;
-  margin-right: 20px;
 }
 
 footer ul {
@@ -106,6 +106,7 @@ section {
 
 .grid {
   display: grid;
+  grid-gap: 64px;
   grid-template-columns: 1fr 2fr 2fr;
 }
 
