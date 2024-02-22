@@ -22,7 +22,7 @@ header {
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.9)
     ),
-    url("./images/folhas.jpg");
+    url("./images/leaves.jpg");
 }
 
 header h1 {
@@ -63,15 +63,15 @@ header a {
 }
 
 footer {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.9)
+      rgba(249, 247, 244, 0.92),
+      rgba(249, 247, 244, 0.9)
     ),
-    url("./images/folhas.jpg");
-  background-color: #f9f7f4;
-  color: black;
+    url("./images/leaves.jpg");
+  background-size: 500px;
+  background-position-y: bottom;
 }
 
 footer h3 {
@@ -139,6 +139,11 @@ section.my-portfolio-container {
   background-color: #f9f7f4;
 }
 
+section.my-portfolio-container h4 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
 .forward-container {
   text-align: center;
   margin: 40px;
@@ -176,6 +181,16 @@ section.my-portfolio-container {
   margin: 0 0 50px 50px;
 }
 
+/* CREATE A LINE BELOW THE TEXT USING ::AFTER*/
+.my-portfolio-container h3::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: black;
+  margin-top: 30px;
+}
+
 .about-me-center-image {
   display: flex;
   justify-content: center;
@@ -201,7 +216,74 @@ section.my-portfolio-container {
 
 .grid-3-columns-my-projects {
   grid-template-columns: repeat(3, 1fr);
-  margin: 30px 0;
+  grid-gap: 0;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-projects img {
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  height: auto;
+}
+
+.project-title {
+  text-decoration: none;
+  color: black;
+}
+
+.project-title:hover {
+  text-decoration: none;
+  color: #af2858;
+}
+
+.grid-4-columns-footer {
+  grid-template-columns: auto 800px auto auto;
+  grid-gap: 0;
+}
+
+.footer-section li {
+  list-style: none;
+  padding: 0;
+  margin-right: 40px;
+  font-size: 30px;
+  display: inline;
+}
+
+.footer-section .shecodes-icon {
+  margin-right: 0;
+}
+
+.footer-section ul {
+  margin-left: 40px;
+  padding: 0;
+}
+
+.footer-section p {
+  text-align: left;
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #15aabf;
+}
+
+.footer-section h3 {
+  color: #15aabf;
+  padding-top: 5px;
+  display: flex;
+  justify-content: right;
+  font-size: 18px;
+}
+
+.footer-section h2 {
+  margin-left: 30px;
+  text-align: center;
 }
 
 .project-img {
